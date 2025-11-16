@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Magelina Digital Store</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@700&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        html {
+            scroll-behavior: smooth;
+        }
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-color: #000000;
+            color: #ffffff;
+            overflow-x: hidden;
+        }
+        /* Scrollbar styling */
+        ::-webkit-scrollbar {
+            width: 8px;
+        }
+        ::-webkit-scrollbar-track {
+            background: #1a1a1a;
+        }
+        ::-webkit-scrollbar-thumb {
+            background: #6a4e4e; /* Lighter brown for better harmony */
+            border-radius: 0px;
+        }
+        ::-webkit-scrollbar-thumb:hover {
+            background: #8b6b6b;
+        }
+        
+        /* 3D Utilities */
+        .perspective-1000 {
+            perspective: 1000px;
+        }
+        .transform-style-3d {
+            transform-style: preserve-3d;
+        }
+        .backface-hidden {
+            backface-visibility: hidden;
+        }
+        .translate-z-0 {
+            transform: translateZ(0px);
+        }
+        .translate-z-10 {
+            transform: translateZ(10px);
+        }
+        .translate-z-20 {
+            transform: translateZ(20px);
+        }
+        .translate-z-30 {
+            transform: translateZ(30px);
+        }
+        .translate-z-50 {
+            transform: translateZ(50px);
+        }
+    </style>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              brand: {
+                brown: '#4b2e2e',
+                gold: '#bfa14a',
+                light: '#f9f9f9',
+                dark: '#0a0a0a',
+                charcoal: '#121212'
+              }
+            },
+            fontFamily: {
+              sans: ['Poppins', 'sans-serif'],
+              serif: ['Cormorant Garamond', 'serif'],
+            },
+            backgroundImage: {
+               'soft-gradient': 'linear-gradient(to bottom right, #f9fafb, #e5e7eb)',
+            },
+            animation: {
+              'spin-slow': 'spin 20s linear infinite',
+            },
+            dropShadow: {
+              'book': '0 35px 35px rgba(0, 0, 0, 0.25)',
+            }
+          }
+        }
+      }
+    </script>
+<script type="importmap">
+{
+  "imports": {
+    "react/": "https://aistudiocdn.com/react@^19.2.0/",
+    "react": "https://aistudiocdn.com/react@^19.2.0",
+    "react-dom/": "https://aistudiocdn.com/react-dom@^19.2.0/",
+    "lucide-react": "https://aistudiocdn.com/lucide-react@^0.553.0",
+    "framer-motion": "https://aistudiocdn.com/framer-motion@^12.23.24",
+    "@google/genai": "https://aistudiocdn.com/@google/genai@^1.29.1"
+  }
+}
+</script>
+</head>
+<body>
+    <div id="root"></div>
+</body>
+</html>
